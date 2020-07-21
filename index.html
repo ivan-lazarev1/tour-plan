@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -98,6 +99,7 @@
       <!-- /.container -->
     </nav>
     <!-- .breadcrumb -->
+
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
@@ -121,12 +123,44 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rating</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="five">5</span>
+            </span>
           </div>
           <!-- /.hotel-info__rating -->
         </div>
+        <!-- .hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="image/slide.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/slide.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/slide.jpg" alt="" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- .swiper-container -->
+          </div>
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
