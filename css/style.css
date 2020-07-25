@@ -865,7 +865,7 @@ template {
   .slider {
     width: 100%;
   }
-  .map {
+  #map {
     width: 340px;
   }
 }
