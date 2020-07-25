@@ -797,12 +797,11 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   background-color: #000;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -946,7 +945,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  #map {
     width: 100%;
   }
 }
