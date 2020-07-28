@@ -950,7 +950,7 @@ template {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
-  height: 30px;
+  min-height: 30px;
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
@@ -959,6 +959,9 @@ template {
   cursor: pointer;
   z-index: 99;
   outline: none;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .reviews-slider__button--prev {
