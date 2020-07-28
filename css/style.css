@@ -1208,6 +1208,10 @@ template {
     -webkit-transform: translateX(-50%, 0);
             transform: translateX(-50%, 0);
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1233,6 +1237,16 @@ template {
     margin-bottom: 42px;
     font-size: 18px;
     line-height: 23px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews__title {
+    max-width: 245px;
+    margin: 0 auto 42px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
