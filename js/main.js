@@ -48,8 +48,21 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+});
 
-  $(this).keydown(function (eventObject) {
-    if (eventObject.which == 27) $(".modal").hide();
-  });
+// обработа форм
+$(".modal__form").validate({
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "Your name has to be bigger than 2 symbols",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    phone: {
+      required: "Phone number required",
+    },
+  },
 });

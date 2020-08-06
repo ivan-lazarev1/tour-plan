@@ -1400,14 +1400,18 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   outline: none;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1943,6 +1947,16 @@ template {
   }
   .navbar__search_mobile_visible {
     max-width: 80%;
+  }
+}
+
+@media (max-height: 523px) {
+  .modal__dialog {
+    max-height: 360px;
+    overflow: scroll;
+  }
+  .modal__form {
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
