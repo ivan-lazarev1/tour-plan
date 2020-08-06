@@ -830,6 +830,7 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 #map {
