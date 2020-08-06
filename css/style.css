@@ -833,11 +833,11 @@ template {
   outline: none;
 }
 
-#map {
+.map {
   width: 347px;
   height: 213px;
-  background-color: #000;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .newsletter {
@@ -1505,9 +1505,6 @@ template {
   .booking {
     width: 340px;
   }
-  #map {
-    width: 340px;
-  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1706,7 +1703,7 @@ template {
   .booking {
     width: 100%;
   }
-  #map {
+  .map {
     width: 100%;
   }
   .newsletter-wrapper {
