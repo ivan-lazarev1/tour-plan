@@ -51,18 +51,21 @@ $(document).ready(function () {
 });
 
 // обработа форм
-$(".modal__form").validate({
-  messages: {
-    name: {
-      required: "Please specify your name",
-      minlength: "Your name has to be bigger than 2 symbols",
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Your name has to be bigger than 2 symbols",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Phone number required",
+      },
     },
-    email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
-    },
-    phone: {
-      required: "Phone number required",
-    },
-  },
+  });
 });
