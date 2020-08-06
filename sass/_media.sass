@@ -60,7 +60,7 @@
       margin-bottom: 20px
   .card
     width: 340px
-    height: 230px
+    height: 255px
   .footer
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
@@ -208,7 +208,7 @@
       font-size: 30px
       line-height: 38px
   .activities
-    padding-top: 40px
+    padding-top: 10px
     padding-bottom: 60px
   .card
     width: 49%
@@ -218,6 +218,8 @@
       flex-basis: 100%
     &-policy
       justify-content: space-between
+      &__link
+        padding: 0 5px 0 0
       &__images
         position: relative
   .modal
@@ -278,11 +280,15 @@
         grid-column: 1
         max-width: 90%
     &-policy
-      flex-wrap: wrap
+      flex-direction: column
       &__list
         margin-bottom: 10px
       &__link
-        padding-left: 0
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        padding: 0 5 0 0px
       &__images
         position: relative
   .navbar
