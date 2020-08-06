@@ -220,7 +220,10 @@
       justify-content: space-between
       &__images
         position: relative
-    
+  .modal
+    &__dialog
+      max-width: 370px
+      padding: 28px 50px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -287,6 +290,16 @@
       &_mobile
         &_visible
           max-width: 90%
+  .modal
+    &__dialog
+      max-width: 314px
+      padding: 28px 39px
+    &__button
+      width: 100%
+    &__message
+      resize: none
+    &__info
+      margin-top: 5px
 @media (max-width: 320px)
   .reviews
     &__title

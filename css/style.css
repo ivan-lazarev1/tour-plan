@@ -1394,6 +1394,7 @@ template {
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .modal__input {
@@ -1758,6 +1759,10 @@ template {
   .footer-policy__images {
     position: relative;
   }
+  .modal__dialog {
+    max-width: 370px;
+    padding: 28px 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1863,6 +1868,19 @@ template {
   }
   .navbar__search_mobile_visible {
     max-width: 90%;
+  }
+  .modal__dialog {
+    max-width: 314px;
+    padding: 28px 39px;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal__message {
+    resize: none;
+  }
+  .modal__info {
+    margin-top: 5px;
   }
 }
 
