@@ -1406,6 +1406,7 @@ template {
   width: 100%;
   max-height: 123px;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .modal__info {
@@ -1428,6 +1429,10 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.modal__input {
+  outline: none;
 }
 
 @media (max-width: 1200px) {
