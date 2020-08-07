@@ -71,3 +71,12 @@ $(".form").each(function () {
 });
 
 AOS.init();
+
+const map = document.querySelector(".map-google");
+map.addEventListener("mouseover", initmap);
+function initmap() {
+  if (map.getAttribute("data-src")) {
+    map.setAttribute("src", map.getAttribute("data-src"));
+    map.removeEventListener("mouseover", initmap);
+  }
+}
