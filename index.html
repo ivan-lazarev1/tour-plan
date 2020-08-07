@@ -6,9 +6,11 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
+      rel="preload"
     />
   </head>
 
@@ -16,7 +18,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="300">
             <img
               src="image/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -27,6 +29,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
           >
             <input
               type="text"
@@ -38,7 +42,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="image/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -255,7 +264,7 @@
       data-speed="0"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-left">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -264,14 +273,16 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
         >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="phone"
+            required
           />
-          <button class="subscribe__button">
+          <button class="subscribe__button" type="submit">
             Send
           </button>
         </form>
@@ -409,25 +420,41 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img src="image/activity-1.jpg" alt="" class="card__image" />
             <h3 class="card__title">The curious corner of chamarelh</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- .card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img src="image/activity-2.jpg" alt="" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- .card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img src="image/activity-3.jpg" alt="" class="card__image" />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- .card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img src="image/activity-4.jpg" alt="" class="card__image" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -676,6 +703,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
