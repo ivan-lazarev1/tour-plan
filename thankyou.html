@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -138,6 +141,11 @@
             <p class="hotel-description hotel-info__description">
               Our manager will call you in 5 minutes.
             </p>
+            <div class="thank">
+              <a href="index.html" class="button booking__button thank__button"
+                >Return to main page</a
+              >
+            </div>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -149,11 +157,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="image/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a class="footer-logo" href="index.html"
+            ><img
+              src="image/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -257,7 +266,7 @@
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2 footer__title--mb-3">
+              <li class="footer__item footer__item--mb-2 footer__item--mb-3">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
@@ -265,36 +274,59 @@
                     alt=""
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div>
+                  <a class="tel-links" href="tel:269 1500 "
+                    >Tel (business hours) : 269 1500
+                  </a>
+                  <br />
+                  <a class="tel-links" href="tel:52-56-61-38 "
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)
+                  </a>
+                  <br />
+                  <a class="tel-links" href="tel:52-56-61-38 ">
+                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  </a>
+                </div>
               </li>
-              <li class="footer__item footer__item--mb-2 footer__title--mb-3">
+              <li class="footer__item footer__item--mb-2 footer__item--mb-3">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="image/mail.svg" alt="" />
                 </div>
-                cherly.lawson@example.com
+                <div>
+                  <a class="tel-links" href="mailto:cherly.lawson@example.com">
+                    cherly.lawson@example.com</a
+                  >
+                </div>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name"
-                name="name"
-              /><input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name"
+                  name="name"
+                  required
+                  minlength="6"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input footer__phone"
+                  placeholder="Phone Number"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
+              </div>
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
@@ -326,11 +358,11 @@
     </footer>
     <!-- /.footer -->
 
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=b25f7498-c136-4873-b8ec-4e64e82247dc&lang=ru_RU"
-      type="text/javascript"
-    ></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>

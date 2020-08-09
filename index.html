@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
-      rel="preload"
     />
   </head>
 
@@ -18,7 +19,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="300">
+          <a href="index.html" class="logo">
             <img
               src="image/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -29,25 +30,18 @@
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
-            data-aos="fade-right"
-            data-aos-delay="300"
           >
             <input
               type="text"
               class="search__input"
               placeholder="Search Location"
             />
-            <button class="search__button">
+            <button class="search__button button-second">
               <img src="image/search.svg" alt="Icon: search" />
             </button>
           </form>
 
-          <a
-            href="#"
-            class="user navbar__user navbar__user_mobile_hidden"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="image/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -88,7 +82,7 @@
                   class="search__input"
                   placeholder="Search Location"
                 />
-                <button class="search__button">
+                <button class="search__button button-second">
                   <img src="image/search.svg" alt="Icon: search" />
                 </button>
               </form>
@@ -103,7 +97,7 @@
               <a href="#" class="navbar-menu__link">Activities</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">Restaurants</a>
@@ -112,7 +106,7 @@
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
+              <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
         </div>
@@ -176,10 +170,18 @@
                 <img class="swiper-slide__image" src="image/slide.jpg" alt="" />
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="image/slide.jpg" alt="" />
+                <img
+                  class="swiper-slide__image"
+                  src="image/slide-2.jpg"
+                  alt=""
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="image/slide.jpg" alt="" />
+                <img
+                  class="swiper-slide__image"
+                  src="image/slide-3.jpg"
+                  alt=""
+                />
               </div>
             </div>
 
@@ -241,11 +243,6 @@
                 class="map-google"
                 data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37598.5631426122!2d98.25425611918247!3d7.888570031517223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1596706054093!5m2!1sru!2sru"
                 src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
               ></iframe>
             </div>
             <!-- /.map -->
@@ -277,12 +274,12 @@
         >
           <input
             type="email"
-            class="subscribe__input"
+            class="subscribe__input input"
             placeholder="Your email address"
-            name="phone"
+            name="email"
             required
           />
-          <button class="subscribe__button" type="submit">
+          <button class="subscribe__button button-second" type="submit">
             Send
           </button>
         </form>
@@ -427,7 +424,9 @@
           >
             <img src="image/activity-1.jpg" alt="" class="card__image" />
             <h3 class="card__title">The curious corner of chamarelh</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button button-second">
+              Book Now
+            </button>
           </div>
           <!-- .card -->
           <div
@@ -437,7 +436,9 @@
           >
             <img src="image/activity-2.jpg" alt="" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button button-second">
+              Book Now
+            </button>
           </div>
           <!-- .card -->
           <div
@@ -447,7 +448,9 @@
           >
             <img src="image/activity-3.jpg" alt="" class="card__image" />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button button-second">
+              Book Now
+            </button>
           </div>
           <!-- .card -->
           <div
@@ -457,7 +460,9 @@
           >
             <img src="image/activity-4.jpg" alt="" class="card__image" />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button button-second">
+              Book Now
+            </button>
           </div>
           <!-- .card -->
         </div>
@@ -470,11 +475,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="image/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a class="footer-logo" href="index.html"
+            ><img
+              src="image/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -578,7 +584,7 @@
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2 footer__title--mb-3">
+              <li class="footer__item footer__item--mb-2 footer__item--mb-3">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
@@ -586,16 +592,30 @@
                     alt=""
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div>
+                  <a class="tel-links" href="tel:269 1500 "
+                    >Tel (business hours) : 269 1500
+                  </a>
+                  <br />
+                  <a class="tel-links" href="tel:52-56-61-38 "
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)
+                  </a>
+                  <br />
+                  <a class="tel-links" href="tel:52-56-61-38 ">
+                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  </a>
+                </div>
               </li>
-              <li class="footer__item footer__item--mb-2 footer__title--mb-3">
+              <li class="footer__item footer__item--mb-2 footer__item--mb-3">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="image/mail.svg" alt="" />
                 </div>
-                cherly.lawson@example.com
+                <div>
+                  <a class="tel-links" href="mailto:cherly.lawson@example.com">
+                    cherly.lawson@example.com</a
+                  >
+                </div>
               </li>
             </ul>
           </div>
@@ -610,15 +630,17 @@
                   placeholder="Your Full Name"
                   name="name"
                   required
+                  minlength="6"
                 />
               </div>
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input"
+                  class="input footer__input footer__phone"
                   placeholder="Phone Number"
                   name="phone"
                   required
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -663,28 +685,35 @@
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form class="modal__form form" action="send.php" method="POST">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="6"
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+              minlength="6"
+            />
+          </div>
           <textarea
             class="message modal__message"
             cols="30"
@@ -704,6 +733,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>

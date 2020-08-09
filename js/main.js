@@ -50,6 +50,7 @@ $(document).ready(function () {
   }
 });
 
+$('[name="phone"]').mask("+7 (000) 000-00-00");
 // обработа форм
 $(".form").each(function () {
   $(this).validate({
@@ -57,14 +58,15 @@ $(".form").each(function () {
     messages: {
       name: {
         required: "Please specify your name",
-        minlength: "Your name has to be bigger than 2 symbols",
+        minlength: "You need more than 6 symbols",
       },
       email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com",
+        required: "We need your email",
+        email: "Invalid email",
       },
       phone: {
         required: "Phone number required",
+        minlength: "You need more than 10 symbols",
       },
     },
   });

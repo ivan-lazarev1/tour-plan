@@ -34,6 +34,8 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:hover
+          color: inherit
   .search
     &__input
       width: 340px
@@ -61,38 +63,64 @@
     width: 340px
     height: 255px
   .footer
+    padding-top: 73px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-template-columns: repeat(12, 1fr)
+      grid-row-gap: 45px
     &__input
       flex-basis: 49%
-    &__logo
+    &-logo
       grid-row: 1 / 2
-      grid-column: span 2
+      grid-column: span 3
+      width: 104px
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: span 9
         align-self: center
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: span 3
     &__legal
-      grid-column: span 2
+      grid-column: span 4
+      padding-left: 0
     &__additional
-      grid-column: span 2
+      grid-column: span 5
     &__contact
       &-details
-        grid-column: span 5
+        grid-column: span 12
         grid-row: 3
       &-form
-        grid-column: span 5
+        grid-column: span 9
         grid-row: 4
     &-policy
       justify-content: space-between
       &__images
         position: relative
-@media (max-width: 768px)
+      &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        &:hover
+          color: inherit
+    .tel
+      &-links
+        &:hover
+          color: inherit
+    &__link
+      &:hover
+        color: inherit
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: #333333
+  .button:hover
+    background-color: $primary
+  .button-second:hover
+    opacity: 1
+@media (max-width: 767px)
   .container
     max-width: 700px
     width: 92%
@@ -132,6 +160,9 @@
         &_mobile
           &_visible
             display: block
+      &__link
+        &:hover
+          color: inherit
   .menu
     &-button
       display: flex
@@ -155,22 +186,7 @@
         margin-left: 0
         margin-top: 10px
   .stars
-    flex-basis: auto
-  .hotel
-    &-name
-      flex-basis: 100%
-    &-wrapper
-      justify-content: space-between
-    &-info
-      &__text
-        width: 100%
-      &__name
-        margin-top: 10px
-      &__rating
-        display: none
-      &__offer
-        order: -1
-        margin-left: 0
+    flex-basis: 100%
   .hotel
     &-right
       flex-direction: column
@@ -187,6 +203,8 @@
       max-width: 576px
       width: 92%
       align-items: flex-start
+    &__title
+      padding-bottom: 37px
   .reviews
     &-slider
       &__item
@@ -222,18 +240,57 @@
         padding: 0 5px 0 0
       &__images
         position: relative
+    &__link
+      &:hover
+        color: inherit
+    .tel
+      &-links
+        &:hover
+          color: inherit
   .modal
     &__dialog
       max-width: 370px
       padding: 28px 50px
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: #333333
+  .button:hover
+    background-color: $primary
+  .button-second:hover
+    opacity: 1
 @media (max-width: 576px)
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: #333333
+  .button:hover
+    background-color: $primary
+  .button-second:hover
+    opacity: 1
   .logo
     width: 99px
   .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      height: 179px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -245,12 +302,13 @@
       margin-bottom: 42px
       font-size: 18px
       line-height: 23px
+      margin-top: 40px
   .card
     width: 100%
   .footer
     &-wrapper
       grid-template-columns: 100%
-    &__logo
+    &-logo
       grid-row: 1
       grid-column: 1
     &__social
@@ -262,13 +320,13 @@
         align-items: flex-start
         justify-content: space-between
         height: 60px
-    &__additional
+    &__legal
       grid-row: 3
       grid-column: 1
-    &__categories
+    &__additional
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
       grid-column: 1
     &__contact
@@ -281,6 +339,7 @@
         max-width: 90%
     &-policy
       flex-direction: column
+      margin-top: 30px
       &__list
         margin-bottom: 10px
       &__link
@@ -291,11 +350,22 @@
         padding: 0 5 0 0px
       &__images
         position: relative
+    &__link
+      &:hover
+        color: inherit
+    .tel
+      &-links
+        &:hover
+          color: inherit
   .navbar
     &__search
       &_mobile
         &_visible
           max-width: 90%
+    &-menu
+      &__link
+        &:hover
+          color: inherit
   .modal
     &__dialog
       max-width: 314px
@@ -306,20 +376,52 @@
       resize: none
     &__info
       margin-top: 5px
+  .stars
+    flex-basis: auto
 @media (max-width: 320px)
+  .hotel
+    padding-top: 0
+    padding-bottom: 15px
+    &-info
+      &__offer
+        margin-top: 3px
+        margin-left: 8px
+      &__name
+        margin-top: 9px
+      &__description
+        margin-right: 4px
+        margin-left: 4px
+  .breadcrumb
+    &-list
+      padding-top: 14px
+      &__link
+        &:hover
+          color: #333333
+  .button:hover
+    background-color: $primary
+  .button-second:hover
+    opacity: 1
   .reviews
+    padding: 40px 0 70px 0
     &__title
       max-width: 245px
       margin: 0 auto 42px
     &-slider
       &__text
         text-align: left
+      &__button
+        &--next
+          margin-right: -94px
+        &--prev
+          margin-left: -98px
   .footer
+    padding-top: 49px
     &__contact
       &-form
         max-width: 100%
     &__message
       max-height: 123px 
+      margin-bottom: 13px
     &__button
       display: flex
       order: 2
@@ -330,17 +432,51 @@
       margin-bottom: 20px
     &-policy
       flex-direction: column
+      margin-top: 30px
       &__link
         font-style: normal
         font-weight: normal
-        font-size: 12px
+        font-size: 11px
         line-height: 15px
         padding: 0 5 0 0px
+        &:hover
+          color: inherit
+    &__title
+      margin: 0 0 2px 0
+  .tel
+    &-links
+      &:hover
+        color: inherit
   .navbar
     &__search
       &_mobile
         &_visible
           max-width: 80%
+    &-menu
+      &__link
+        &:hover
+          color: inherit
+    &-top
+      padding-top: 24px
+  .newsletter
+    &-title
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: -12px
+      &__strong
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .activities
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 38px
 @media (max-height: 523px)
   .modal
     &__dialog
@@ -351,4 +487,12 @@
   .footer
     &__message
       height: 123px
-
+  .navbar
+    &-bottom
+      &--visible
+        overflow: scroll
+  .hotel
+    margin: 0 15px 0 15px
+    &-slider
+      height: 190px
+  
